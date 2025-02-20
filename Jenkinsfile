@@ -36,7 +36,7 @@ stage('Checkout Source') {
 	
    stage('Deploy Application') {
             steps {
-                sh "docker run -rm suprabhatcs/script-containerization:${BUILD_NUMBER}"
+                bat 'docker run -rm suprabhatcs/script-containerization:${BUILD_NUMBER}'
             }
         }
   
